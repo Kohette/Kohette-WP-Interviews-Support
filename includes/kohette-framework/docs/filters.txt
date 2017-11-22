@@ -1,0 +1,12 @@
+
+
+
+
+
+KTT_theme_css_options
+This filter allow us to insert css code in the theme dinamycally,
+This contains an array with the ids of the site options that would use this feature.
+The value of the options its an array that can be converter in CSS code by
+the function KTT_theme_css_option_array_to_code.
+It is used in the function KTT_load_theme_css_options.
+eg: $options = apply_filters('KTT_theme_css_options', $options);
