@@ -6,7 +6,7 @@
  *
  */
 
-
+if (!class_exists('KTT_new_metabox')) {
 // add section to admin pages
 class KTT_new_metabox {
 
@@ -133,4 +133,5 @@ class KTT_new_metabox {
     }
 
 
+}
 }
