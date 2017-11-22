@@ -30,13 +30,13 @@ function KTT_interview_register_buttons( $buttons ) {
 // Shortcodes functions
 
 function KTT_question_shortcode( $atts, $content = null ) {
-	return '<p class="question font-weight-700">' . do_shortcode($content) . '</p>';
+	return '<p class="ktt-interview-question font-weight-700">' . do_shortcode($content) . '</p>';
 }
 add_shortcode( 'question', 'KTT_question_shortcode' );
 
 
 
 function KTT_answer_shortcode( $atts, $content = null ) {
-	return '<p class="answer">' . do_shortcode($content) . '</p>';
+	return '<p class="ktt-interview-answer">' . do_shortcode($content) . '</p>';
 }
 add_shortcode( 'answer', 'KTT_answer_shortcode' );

@@ -81,10 +81,11 @@ function KTT_print_css_interview_style($content) {
 	if (is_single()) {
 
 		global $post;
-		if (isset($post->post_interview_interviewed) && $post->post_interview_interviewed) {?>
+		//if (isset($post->post_interview_interviewed) && $post->post_interview_interviewed) {
+		?>
 		<style>
 
-		      .question:before, .answer:before {
+		      .ktt-interview-question:before, .ktt-interview-answer:before {
 		        position:absolute;
 		        width:200px;
 		        text-align:right;
@@ -95,7 +96,7 @@ function KTT_print_css_interview_style($content) {
 
 
 		      @media  screen and (min-width : 0px) and (max-width : 768px) {
-		        .question:before, .answer:before {
+		        .ktt-interview-question:before, .ktt-interview-answer:before {
 		          position:relative;
 		          display:block;
 		          text-align:left;
@@ -103,28 +104,28 @@ function KTT_print_css_interview_style($content) {
 		        }
 		      }
 
-			.question:before {
+			.ktt-interview-question:before {
 			     content:'<?php _e('Question','narratium');?>';
 			}
-			.answer:before {
+			.ktt-interview-answer:before {
 			     content:'<?php _e('Answer','narratium');?>';
 			}
 
 
 			<?php if ($post->post_interview_interviewer) {?>
-			.question:before {
+			.ktt-interview-question:before {
 			  	content:'<?php echo $post->post_interview_interviewer;?>';
 			}
 			<?php } ?>
 
 			<?php if ($post->post_interview_interviewed) { ?>
-			.answer:before {
+			.ktt-interview-answer:before {
 				content:'<?php echo $post->post_interview_interviewed;?>';
 			}
 			<?php } ?>
 
 		</style>
-		<?php }
+		<?php //}
 
 	}
 
