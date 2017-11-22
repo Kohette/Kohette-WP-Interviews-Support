@@ -15,7 +15,7 @@ function KTT_interview_buttons() {
     add_filter( 'mce_buttons', 'KTT_interview_register_buttons' );
 }
 function KTT_interview_add_buttons( $plugin_array ) {
-    $plugin_array['interview_buttons'] = plugins_url( '/buttons_src/js/interview_buttons.js', dirname(__FILE__) );
+    $plugin_array['interview_buttons'] = plugins_url( '/includes/buttons_src/js/interview_buttons.js', dirname(__FILE__) );
     return $plugin_array;
 }
 function KTT_interview_register_buttons( $buttons ) {
