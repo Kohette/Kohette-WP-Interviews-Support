@@ -2,7 +2,7 @@
 /*
 Plugin Name: Kohette Interview Support
 Description: Adds interviews support for WordPress posts
-Version: 1.0.0
+Version: 1.0.1
 Author: Rafael Martín
 Author URI: http://kohette.com
 Text Domain: ktt-interview-support
@@ -16,7 +16,7 @@ Domain Path: /languages
 require_once("includes/kohette-framework/modules/metabox-creator/metabox-creator.php");
 
 /**
-* Metabox 
+* Metabox
 */
 require_once("includes/interview-support-metabox.php");
 
@@ -24,6 +24,3 @@ require_once("includes/interview-support-metabox.php");
 * Shortcode
 */
 require_once("includes/interview-buttons-shortcode.php");
-
-
-

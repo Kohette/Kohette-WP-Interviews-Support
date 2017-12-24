@@ -74,7 +74,7 @@ function KTT_interview_metabox($post) {
 
 // add the css style for interview in the article page
 
-add_filter('the_content', 'KTT_print_css_interview_style');
+add_filter('wp_head', 'KTT_print_css_interview_style');
 function KTT_print_css_interview_style($content) {
 
 
