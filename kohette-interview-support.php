@@ -2,7 +2,7 @@
 /*
 Plugin Name: Kohette Interview Support
 Description: Adds interviews support for WordPress posts
-Version: 1.0.1
+Version: 1.0.2
 Author: Rafael Martín
 Author URI: http://kohette.com
 Text Domain: ktt-interview-support

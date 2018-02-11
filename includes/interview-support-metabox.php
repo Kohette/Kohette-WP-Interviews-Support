@@ -39,7 +39,7 @@ function KTT_interview_metabox($post) {
     		<td>
     			<fieldset>
 
-    				<input type="text" name="<?php echo 'ktt_post_interview_interviewer';?>" value="<?php echo get_post_meta($post->ID, 'ktt_post_interview_interviewed', true);?>">
+    				<input type="text" name="<?php echo 'ktt_post_interview_interviewer';?>" value="<?php echo get_post_meta($post->ID, 'ktt_post_interview_interviewer', true);?>">
 
     			</fieldset>
     		</td>
